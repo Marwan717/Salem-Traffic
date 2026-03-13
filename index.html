@@ -1,0 +1,158 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>TrafficAI – Conflict Detection</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script defer src="script.js"></script>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">TrafficAI</div>
+
+<ul>
+<li><a href="#features">Features</a></li>
+<li><a href="#pipeline">Technology</a></li>
+<li><a href="#metrics">Safety Metrics</a></li>
+<li><a href="#demo">Demo</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<canvas id="backgroundCanvas"></canvas>
+
+<div class="hero-content">
+
+<h1>AI Traffic Conflict Detection</h1>
+
+<p>
+Detect near-miss crashes automatically using computer vision,
+trajectory prediction, and safety analytics.
+</p>
+
+<button onclick="scrollToDemo()">Try Demo</button>
+
+</div>
+
+</section>
+
+<section id="features" class="features">
+
+<h2>Core Capabilities</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Vehicle Detection</h3>
+<p>Deep learning identifies cars, trucks, buses and motorcycles from traffic video.</p>
+</div>
+
+<div class="card">
+<h3>Multi-Object Tracking</h3>
+<p>Persistent tracking IDs follow vehicles across frames.</p>
+</div>
+
+<div class="card">
+<h3>Speed Estimation</h3>
+<p>Vehicle speeds are estimated from displacement between frames.</p>
+</div>
+
+<div class="card">
+<h3>Trajectory Prediction</h3>
+<p>Vehicle paths are predicted using motion vectors.</p>
+</div>
+
+<div class="card">
+<h3>Conflict Detection</h3>
+<p>Predicted trajectories identify potential collision points.</p>
+</div>
+
+<div class="card">
+<h3>Safety Analytics</h3>
+<p>Near-miss events are calculated using traffic safety metrics.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="pipeline" class="pipeline">
+
+<h2>System Pipeline</h2>
+
+<div class="steps">
+
+<div>Video Input</div>
+<div>YOLO Detection</div>
+<div>Vehicle Tracking</div>
+<div>Trajectory History</div>
+<div>Speed Calculation</div>
+<div>Trajectory Prediction</div>
+<div>Conflict Analysis</div>
+
+</div>
+
+</section>
+
+<section id="metrics" class="metrics">
+
+<h2>Safety Metrics</h2>
+
+<div class="grid">
+
+<div class="metric">
+<h3>TTC</h3>
+<p>Time-to-Collision predicts how long before a crash occurs.</p>
+</div>
+
+<div class="metric">
+<h3>PET</h3>
+<p>Post-Encroachment Time measures the delay between vehicles crossing a conflict point.</p>
+</div>
+
+<div class="metric">
+<h3>DRAC</h3>
+<p>Deceleration needed to avoid a crash.</p>
+</div>
+
+<div class="metric">
+<h3>Delta-V</h3>
+<p>Change in velocity during a potential collision.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="demo" class="demo">
+
+<h2>Traffic Conflict Demo</h2>
+
+<canvas id="intersectionCanvas"></canvas>
+
+<p id="warning"></p>
+
+</section>
+
+<footer>
+
+<p>© 2026 TrafficAI – Intelligent Safety Analytics</p>
+
+</footer>
+
+</body>
+</html>
+```
